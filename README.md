@@ -5,7 +5,7 @@ A **modular, production-ready AI workspace** that leverages multiple autonomous 
 
 ## Techstack
 ```
-Groq, langchain, faiss, react, typescript, tailwindcss, mongodb, flask, Cohere
+Groq, langchain, faiss, mongodb, flask, Cohere, Flask
 ```
 ---
 
@@ -162,3 +162,4 @@ Groq, langchain, faiss, react, typescript, tailwindcss, mongodb, flask, Cohere
   "status": "completed"
 }
 
+## Integration with frontend of React coming soon.

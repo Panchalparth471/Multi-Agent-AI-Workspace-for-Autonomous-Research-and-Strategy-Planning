@@ -15,8 +15,8 @@ def get_researcher_agent():
         tools=tools,
         llm=llm,
         agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
-        handle_parsing_errors=True,  # ✅ ALREADY PRESENT
+        handle_parsing_errors=True, 
         verbose=True,
-        max_iterations=3,  # ✅ ADDED
-        early_stopping_method="generate"  # ✅ ADDED
+        max_iterations=3,  
+        early_stopping_method="generate"  
     )

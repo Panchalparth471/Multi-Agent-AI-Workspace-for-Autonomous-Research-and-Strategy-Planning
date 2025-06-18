@@ -3,7 +3,7 @@ from app.agents.analyst_agent import get_analyst_agent
 from app.agents.planner_agent import get_planner_agent
 from app.agents.writer_agent import get_writer_agent
 from app.agents.validator_agent import get_validator_agent
-
+from app.services.db_service import save_document
 from app.services.embedding_service import get_embedding_model
 from app.services.vectorstore_service import search_documents, add_documents_to_index
 from app.utils.logging import setup_logger
@@ -70,7 +70,7 @@ def run_full_pipeline(query: str):
         key_points = [analysis_result]
 
     # Step 3: Plan
-    logger.info("📝 Step 3: Planning...")
+    logger.info(" Step 3: Planning...")
     try:
         planner = get_planner_agent()
         plan_input = f"Create a comprehensive content plan for the topic '{query}' based on this analysis:\n\n{analysis_result}"
@@ -156,7 +156,7 @@ def run_full_pipeline(query: str):
 
     logger.info(" Full pipeline execution complete.")
 
-    return format_json_readable({
+    result= format_json_readable({
         "query": query,
         "retrieved_docs": retrieved_knowledge,
         "research": research_result,
@@ -167,3 +167,6 @@ def run_full_pipeline(query: str):
         "key_points": key_points,
         "status": "completed"
     })
+    
+    save_document(result)
+    return result

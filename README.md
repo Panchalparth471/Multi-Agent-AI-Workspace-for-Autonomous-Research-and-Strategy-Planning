@@ -161,5 +161,5 @@ Groq, langchain, faiss, mongodb, flask, Cohere, Flask
   "execution_time": 22.57,
   "status": "completed"
 }
-
+```
 ## Integration with frontend of React coming soon.

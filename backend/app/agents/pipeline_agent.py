@@ -24,7 +24,7 @@ def run_full_pipeline(query: str):
     embedding_model = get_embedding_model()
     
     # Step 0: Retrieve from FAISS
-    logger.info("📂 Step 0: Retrieving from FAISS Vectorstore...")
+    logger.info(" Step 0: Retrieving from FAISS Vectorstore...")
     try:
         vector_results = search_documents(query, embedding_model, k=3)
         retrieved_knowledge = "\n\n".join([doc.page_content for doc in vector_results])
@@ -49,7 +49,7 @@ def run_full_pipeline(query: str):
         research_result = f"Unable to complete research for: {query}. Using basic information."
 
     # Step 2: Analyze
-    logger.info("📊 Step 2: Analysis...")
+    logger.info(" Step 2: Analysis...")
     try:
         analyst = get_analyst_agent()
         analysis_input = f"Analyze the following research findings about '{query}':\n\n{research_result}"
@@ -92,7 +92,7 @@ def run_full_pipeline(query: str):
         """
 
     # Step 4: Write
-    logger.info("✍️ Step 4: Writing...")
+    logger.info(" Step 4: Writing...")
     try:
         writer = get_writer_agent()
         write_input = f"Write a comprehensive article about '{query}' following this content plan:\n\n{plan_result}\n\nBased on this analysis:\n{analysis_result}"
@@ -117,7 +117,7 @@ def run_full_pipeline(query: str):
         """
 
     # Step 5: Validate
-    logger.info("🔎 Step 5: Validating...")
+    logger.info(" Step 5: Validating...")
     try:
         validator = get_validator_agent()
         validation_input = f"Review and validate this article about '{query}':\n\n{draft_result}"
@@ -130,7 +130,7 @@ def run_full_pipeline(query: str):
         validation_result = f"Content validation completed for {query}. The article covers the main aspects of the topic."
 
     # Index final results
-    logger.info("📅 Indexing final outputs to FAISS...")
+    logger.info(" Indexing final outputs to FAISS...")
     try:
         # Only index successful results
         docs_to_index = []
@@ -154,7 +154,7 @@ def run_full_pipeline(query: str):
     except Exception as e:
         logger.error(f"FAISS indexing failed: {e}")
 
-    logger.info("✅ Full pipeline execution complete.")
+    logger.info(" Full pipeline execution complete.")
 
     return format_json_readable({
         "query": query,

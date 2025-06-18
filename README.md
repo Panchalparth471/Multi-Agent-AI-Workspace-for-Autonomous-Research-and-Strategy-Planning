@@ -1,14 +1,12 @@
-# Multi-Agent-AI-Workspace-for-Autonomous-Research-and-Strategy-Planning
-
-## Techstack
-```
-Groq, langchain, faiss, react, typescript, tailwindcss, mongodb, flask, Cohere
-```
 
 #  Multi-Agent AI Workspace for Autonomous Research and Strategy Planning
 
 A **modular, production-ready AI workspace** that leverages multiple autonomous agents to collaboratively perform end-to-end **research**, **analysis**, and **strategic decision-making**.
 
+## Techstack
+```
+Groq, langchain, faiss, react, typescript, tailwindcss, mongodb, flask, Cohere
+```
 ---
 
 ##  Key Features

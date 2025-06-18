@@ -45,28 +45,6 @@ Groq, langchain, faiss, react, typescript, tailwindcss, mongodb, flask, Cohere
 -  Automated Technical or Executive Reporting  
 -  Knowledge Base Augmentation
 
----
-
-### Output example of balanced pipeline
-
-
-{
-    "analysis": "Analysis timeout: Impact of AI on Education has significant impacts that require detailed examination.",
-    "draft": "\n        # Impact of AI on Education\n        \n        ## Introduction\n        Impact of AI on Education represents a significant area of development with far-reaching implications.\n        \n        ## Analysis\n        Analysis timeout: Impact of AI on Education has significant impacts that require detailed examination.\n        \n        ## Conclusion\n        Understanding Impact of AI on Education is crucial for navigating future developments in this field.\n        ",
-    "execution_time": 22.57194018363953,
-    "key_points": [
-"Analysis: Impact of AI on Education has significant impacts that require detailed examination."
-],
-    "plan": "\n            Content Plan for Impact of AI on Education:\n            1. Introduction and Overview\n            2. Current State Analysis\n            3. Key Benefits and Opportunities\n            4. Challenges and Concerns\n            5. Future Implications\n            6. Recommendations and Conclusion\n            ",
-    "query": "Impact of AI on Education",
-    "research": "The impact of AI on education is multifaceted, with both positive and negative consequences. On the one hand, AI can personalize learning experiences, inspire creativity, foster critical thinking, and improve accessibility. It can also empower educators, accelerate learning, and enhance instructional quality. On the other hand, AI can lead to bias in algorithms, privacy and security issues, decreased human interaction, and unemployment. To strike a balance between the benefits and drawbacks, it is crucial to ensure that AI is designed with principles in mind, and AI literacy is essential. By doing so, AI can offer transformative potential in education, personalizing learning, streamlining administrative tasks, and enhancing instructional quality.",
-    "retrieved_docs": "Article: \n        # Impact of AI on Education\n        \n        ## Introduction\n        Impact of AI on Education represents a significant area of development with far-reaching implications.\n        \n        ## Analysis\n        The research findings provide a comprehensive analysis of the impact of AI on education, highlighting both the benefits and drawbacks. The key findings, important themes, implications, and areas for further investigation provide a nuanced understanding of the topic, enabli",
-    "status": "completed",
-    "strategic_report": "Skipped for performance",
-    "swot_analysis": "Skipped for performance",
-    "timeline": "Skipped for performance",
-    "validation": "Skipped for performance"
-}
 
 ---
 

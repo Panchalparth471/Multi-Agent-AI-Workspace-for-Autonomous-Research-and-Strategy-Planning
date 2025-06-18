@@ -141,7 +141,7 @@ Groq, langchain, faiss, react, typescript, tailwindcss, mongodb, flask, Cohere
 
 ---
 
-## 📦 Sample Output (Balanced Pipeline)
+##  Sample Output (Balanced Pipeline)
 
 ```json
 {
